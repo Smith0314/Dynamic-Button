@@ -35,45 +35,45 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
 
 再用列舉一一將 arrayBtn 陣列元素，即 button 實體 initialize
 
- for (index, value) in enumerate(arrayBtn){
-            
-            var btnCount = CGFloat(arrayBtn.count + 1) * btnSpace
-            var btnHeight:CGFloat = (self.view.bounds.height / btnVspace) - rowSpace - CGFloat(vSpace / (currentNum / columnsNum))
-            
-            if index % columnsNum == 0 {
-                btnIndex = 0
-                btnPosY = (Int(btnHeight) * (index / columnsNum) + Int(rowSpace) * (index / columnsNum)) + Int(rowSpace)
-                btnPosY += vSpace
-            }else{
-                btnIndex += 1
+     for (index, value) in enumerate(arrayBtn){
+                
+                var btnCount = CGFloat(arrayBtn.count + 1) * btnSpace
+                var btnHeight:CGFloat = (self.view.bounds.height / btnVspace) - rowSpace - CGFloat(vSpace / (currentNum / columnsNum))
+                
+                if index % columnsNum == 0 {
+                    btnIndex = 0
+                    btnPosY = (Int(btnHeight) * (index / columnsNum) + Int(rowSpace) * (index / columnsNum)) + Int(rowSpace)
+                    btnPosY += vSpace
+                }else{
+                    btnIndex += 1
+                }
+                
+                var btnPosX = Int(btnWidth) * btnIndex + Int(btnSpace) * (btnIndex + 1)
+                
+                if currentNum < columnsNum {
+                    btnWidth = (self.view.bounds.width - btnCount) / CGFloat(currentNum)
+                }else{
+                    btnWidth = (self.view.bounds.width - (btnSpace * CGFloat(columnsNum + 1))) / CGFloat(columnsNum)
+                }
+                
+                var colorValue:CGFloat = 0.01 * CGFloat(index)
+                
+                value.frame = CGRect(x: btnPosX + 2, y: btnPosY, width: Int(btnWidth), height: Int(btnHeight))
+                arrayBtn[index] = UIButton.buttonWithType(.Custom) as UIButton
+                value.backgroundColor = UIColor(red: 0.5 + colorValue, green:0.5, blue: 1.5 - colorValue, alpha: 1.0)
+                sliderTrackColor = value.backgroundColor
+                value.setTitle("NO.\(index+1)", forState: UIControlState.Normal)
+                value.titleLabel!.font = UIFont(name:"AvenirNext-Regular", size:13.0)
+                value.addTarget(self, action: "processButton:", forControlEvents: UIControlEvents.TouchUpInside)
+                value.tag = index
+                
+                var theColor:String = hexFromUIColor(value.backgroundColor!)
+                
+                colorArray.append(theColor)
+                
+                view.addSubview(value)
             }
-            
-            var btnPosX = Int(btnWidth) * btnIndex + Int(btnSpace) * (btnIndex + 1)
-            
-            if currentNum < columnsNum {
-                btnWidth = (self.view.bounds.width - btnCount) / CGFloat(currentNum)
-            }else{
-                btnWidth = (self.view.bounds.width - (btnSpace * CGFloat(columnsNum + 1))) / CGFloat(columnsNum)
-            }
-            
-            var colorValue:CGFloat = 0.01 * CGFloat(index)
-            
-            value.frame = CGRect(x: btnPosX + 2, y: btnPosY, width: Int(btnWidth), height: Int(btnHeight))
-            arrayBtn[index] = UIButton.buttonWithType(.Custom) as UIButton
-            value.backgroundColor = UIColor(red: 0.5 + colorValue, green:0.5, blue: 1.5 - colorValue, alpha: 1.0)
-            sliderTrackColor = value.backgroundColor
-            value.setTitle("NO.\(index+1)", forState: UIControlState.Normal)
-            value.titleLabel!.font = UIFont(name:"AvenirNext-Regular", size:13.0)
-            value.addTarget(self, action: "processButton:", forControlEvents: UIControlEvents.TouchUpInside)
-            value.tag = index
-            
-            var theColor:String = hexFromUIColor(value.backgroundColor!)
-            
-            colorArray.append(theColor)
-            
-            view.addSubview(value)
         }
-    }
 
   
   
