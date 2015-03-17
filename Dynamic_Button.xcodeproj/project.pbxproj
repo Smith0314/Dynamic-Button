@@ -13,6 +13,7 @@
 		04A4D73F1AAF3B6E00D78D53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A4D73E1AAF3B6E00D78D53 /* Images.xcassets */; };
 		04A4D7421AAF3B6E00D78D53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A4D7401AAF3B6E00D78D53 /* LaunchScreen.xib */; };
 		04A4D74E1AAF3B6E00D78D53 /* Dynamic_ButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4D74D1AAF3B6E00D78D53 /* Dynamic_ButtonTests.swift */; };
+		04AB04271AB882910027F53B /* all.png in Resources */ = {isa = PBXBuildFile; fileRef = 04AB04261AB882910027F53B /* all.png */; };
 		04D64CA61AB6BC8A007C43A8 /* smith-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04D64CA51AB6BC8A007C43A8 /* smith-font.ttf */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		04A4D7471AAF3B6E00D78D53 /* Dynamic_ButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dynamic_ButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A4D74C1AAF3B6E00D78D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A4D74D1AAF3B6E00D78D53 /* Dynamic_ButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic_ButtonTests.swift; sourceTree = "<group>"; };
+		04AB04261AB882910027F53B /* all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = all.png; sourceTree = "<group>"; };
 		04D64CA51AB6BC8A007C43A8 /* smith-font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "smith-font.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 				04A4D7341AAF3B6E00D78D53 /* Dynamic_Button */,
 				04A4D74A1AAF3B6E00D78D53 /* Dynamic_ButtonTests */,
 				04A4D7331AAF3B6E00D78D53 /* Products */,
+				04AB04251AB882910027F53B /* screenshots */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +118,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		04AB04251AB882910027F53B /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				04AB04261AB882910027F53B /* all.png */,
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +175,7 @@
 				TargetAttributes = {
 					04A4D7311AAF3B6E00D78D53 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 5QLNKAVQLG;
 					};
 					04A4D7461AAF3B6E00D78D53 = {
 						CreatedOnToolsVersion = 6.2;
@@ -199,6 +211,7 @@
 				04A4D7421AAF3B6E00D78D53 /* LaunchScreen.xib in Resources */,
 				04A4D73F1AAF3B6E00D78D53 /* Images.xcassets in Resources */,
 				04D64CA61AB6BC8A007C43A8 /* smith-font.ttf in Resources */,
+				04AB04271AB882910027F53B /* all.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -329,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -340,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Dynamic_Button/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Dynamic_Button/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
