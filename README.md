@@ -82,7 +82,7 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
         
         
   *用 Slider 控制數量及行列
-  -------------------------------------------------------------------
+-------------------------------------------------------------------
 
 宣告兩個 Slider，sliderBtnNum 控制 button 數量，sliderColumnsNum 控制每行有幾列，再宣告兩個 function 來將 Slider 的值代入
 
