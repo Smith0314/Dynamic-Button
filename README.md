@@ -82,11 +82,11 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
 
 宣告兩個 Slider，sliderBtnNum 控制 button 數量，sliderColumnsNum 控制每行有幾列，再宣告兩個 function 來將 Slider 的值代入
 
-        func changeColumnsNum(slider: UISlider){
-            columnsNum = Int(slider.value)
-            sliderBtnNum.minimumValue = slider.value
-            showColumnsNum.text = "\(Int(slider.value))"
-        }
+    func changeColumnsNum(slider: UISlider){
+        columnsNum = Int(slider.value)
+        sliderBtnNum.minimumValue = slider.value
+        showColumnsNum.text = "\(Int(slider.value))"
+    }
 
     func startArrange(slider: UISlider){
         
@@ -172,18 +172,18 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
   
   在廻圈裹 colorValue 的值會隨著廻圈累加，進而改變 button 背景色 RGB 的值 
 
-                  var colorValue:CGFloat = 0.01 * CGFloat(index)
-                  value.backgroundColor = UIColor(red: 0.5 + colorValue, green:0.5, blue: 1.5 - colorValue, alpha: 1.0)
+       var colorValue:CGFloat = 0.01 * CGFloat(index)
+       value.backgroundColor = UIColor(red: 0.5 + colorValue, green:0.5, blue: 1.5 - colorValue, alpha: 1.0)
   
   
   宣告一個 function 來將 RGB 轉為 16進位的 hex 色碼
   
-          func hexFromUIColor(color: UIColor) -> String
+       func hexFromUIColor(color: UIColor) -> String
         {
             let hexString = String(format: "%02X%02X%02X",
-                Int(CGColorGetComponents(color.CGColor)[0] * 255.0),
-                Int(CGColorGetComponents(color.CGColor)[1] * 255.0),
-                Int(CGColorGetComponents(color.CGColor)[2] * 255.0))
+            Int(CGColorGetComponents(color.CGColor)[0] * 255.0),
+            Int(CGColorGetComponents(color.CGColor)[1] * 255.0),
+            Int(CGColorGetComponents(color.CGColor)[2] * 255.0))
             return hexString
         }
   
