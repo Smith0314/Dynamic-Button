@@ -170,13 +170,13 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
 * Colorful!
   -------------------------------------------------------------------
   
-  在廻圈裹 colorValue 的值會隨著廻圈累加，進而改變 button 背景色 RGB 的值 
+在廻圈裹 colorValue 的值會隨著廻圈累加，進而改變 button 背景色 RGB 的值 
 
        var colorValue:CGFloat = 0.01 * CGFloat(index)
        value.backgroundColor = UIColor(red: 0.5 + colorValue, green:0.5, blue: 1.5 - colorValue, alpha: 1.0)
   
   
-  宣告一個 function 來將 RGB 轉為 16進位的 hex 色碼
+宣告一個 function 來將 RGB 轉為 16進位的 hex 色碼
   
        func hexFromUIColor(color: UIColor) -> String
         {
