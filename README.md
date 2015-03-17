@@ -13,7 +13,7 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
 *自動對應不同螢幕尺寸
 -------------------------------------------------------------------
 
-
+![image](https://github.com/Smith0314/Dynamic_Button/blob/master/screenshots/all.png)
 
         
         
