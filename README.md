@@ -17,31 +17,31 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
 -------------------------------------------------------------------
 
 首先宣告一個 function 來實例化按鈕
-                func createNewButton(buttonName: String, num: Int) -> UIButton {
-                   let myButton = UIButton()
-                return myButton
-                }
+   func createNewButton(buttonName: String, num: Int) -> UIButton {
+     let myButton = UIButton()
+     return myButton
+   }
 
 接著用 for 廻圈來 呼叫 function 取得 button 實體，再一一放入 button 類型的 array 裹
-                for var i:Int = 0; i < currentNum; i++ {
-                    var buttonName = "buttonName" + String(i)
-                    var buttonCreate = createNewButton(buttonName, num: i)
-                    arrayBtn.append(buttonCreate)
-                }
+   for var i:Int = 0; i < currentNum; i++ {
+     var buttonName = "buttonName" + String(i)
+     var buttonCreate = createNewButton(buttonName, num: i)
+     arrayBtn.append(buttonCreate)
+   }
 
 再用列舉一一將 arrayBtn 陣列元素，即 button 實體 initialize
-                    for (index, value) in enumerate(arrayBtn){
-            
-            var btnCount = CGFloat(arrayBtn.count + 1) * btnSpace
-            var btnHeight:CGFloat = (self.view.bounds.height / btnVspace) - rowSpace - CGFloat(vSpace / (currentNum / columnsNum))
-            
-            if index % columnsNum == 0 {
-                btnIndex = 0
-                btnPosY = (Int(btnHeight) * (index / columnsNum) + Int(rowSpace) * (index / columnsNum)) + Int(rowSpace)
-                btnPosY += vSpace
-            }else{
-                btnIndex += 1
-            }
+   for (index, value) in enumerate(arrayBtn){
+     
+     var btnCount = CGFloat(arrayBtn.count + 1) * btnSpace
+     var btnHeight:CGFloat = (self.view.bounds.height / btnVspace) - rowSpace - CGFloat(vSpace / (currentNum / columnsNum))
+     
+     if index % columnsNum == 0 {
+       btnIndex = 0
+        btnPosY = (Int(btnHeight) * (index / columnsNum) + Int(rowSpace) * (index / columnsNum)) + Int(rowSpace)
+       btnPosY += vSpace
+     }else{
+       btnIndex += 1
+     }
             
             var btnPosX = Int(btnWidth) * btnIndex + Int(btnSpace) * (btnIndex + 1)
             
