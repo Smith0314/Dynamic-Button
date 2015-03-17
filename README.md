@@ -23,6 +23,7 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
         return myButton
     }
 
+
 接著用 for 廻圈來 呼叫 function 取得 button 實體，再一一放入 button 類型的 array 裹
 
         for var i:Int = 0; i < currentNum; i++ {
@@ -30,6 +31,7 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
             var buttonCreate = createNewButton(buttonName, num: i)
             arrayBtn.append(buttonCreate)
         }
+
 
 再用列舉一一將 arrayBtn 陣列元素，即 button 實體 initialize
 
@@ -74,10 +76,12 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
     }
 
   
+  
   *用 Slider 控制數量及行列
   -------------------------------------------------------------------
 
 宣告兩個 Slider，sliderBtnNum 控制 button 數量，sliderColumnsNum 控制每行有幾列，再宣告兩個 function 來將 Slider 的值代入
+
         func changeColumnsNum(slider: UISlider){
             columnsNum = Int(slider.value)
             sliderBtnNum.minimumValue = slider.value
@@ -162,14 +166,18 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
     }
 
 
+
 * Colorful!
   -------------------------------------------------------------------
   
   在廻圈裹 colorValue 的值會隨著廻圈累加，進而改變 button 背景色 RGB 的值 
+
                   var colorValue:CGFloat = 0.01 * CGFloat(index)
                   value.backgroundColor = UIColor(red: 0.5 + colorValue, green:0.5, blue: 1.5 - colorValue, alpha: 1.0)
   
+  
   宣告一個 function 來將 RGB 轉為 16進位的 hex 色碼
+  
           func hexFromUIColor(color: UIColor) -> String
         {
             let hexString = String(format: "%02X%02X%02X",
