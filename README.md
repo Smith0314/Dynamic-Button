@@ -1,21 +1,21 @@
 # Dynamic_Button
 Dynamic Create Button and Arrange, built using Swift, without storyboard
         
-        
+.        
         
 *演示影片:操作 Slider 來改變數量及行列
 -------------------------------------------------------------------
 
 [![Alt text for your video](https://i.ytimg.com/vi/Xl1w8YeOB_0/3.jpg)](https://www.youtube.com/watch?v=Xl1w8YeOB_0)
 
-        
+.        
         
 *自動對應不同螢幕尺寸
 -------------------------------------------------------------------
 
 ![image](https://github.com/Smith0314/Dynamic_Button/blob/master/screenshots/all.png)
 
-        
+.        
         
 *用廻圈建立跟初始化按鈕
 -------------------------------------------------------------------
@@ -80,7 +80,7 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
         }
 
   
-        
+.        
         
   *用 Slider 控制數量及行列
 -------------------------------------------------------------------
@@ -171,7 +171,7 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
       }
 
 
-
+.
         
         
 * Colorful!
