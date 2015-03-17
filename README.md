@@ -18,10 +18,10 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
 
 首先宣告一個 function 來實例化按鈕
 
-    func createNewButton(buttonName: String, num: Int) -> UIButton {
-        let myButton = UIButton()
-        return myButton
-    }
+        func createNewButton(buttonName: String, num: Int) -> UIButton {
+         let myButton = UIButton()
+         return myButton
+        }
 
 
 接著用 for 廻圈來 呼叫 function 取得 button 實體，再一一放入 button 類型的 array 裹
