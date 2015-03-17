@@ -167,8 +167,9 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
 
 
 
+
 * Colorful!
-  -------------------------------------------------------------------
+-------------------------------------------------------------------
   
 在廻圈裹 colorValue 的值會隨著廻圈累加，進而改變 button 背景色 RGB 的值 
 
