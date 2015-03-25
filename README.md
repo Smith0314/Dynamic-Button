@@ -5,7 +5,7 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
 *演示影片:操作 Slider 來改變數量及行列
 -------------------------------------------------------------------
 
-![linkname](https://i.ytimg.com/vi/Xl1w8YeOB_0/3.jpg)](https://www.youtube.com/watch?v=Xl1w8YeOB_0)
+![YouTube](https://i.ytimg.com/vi/Xl1w8YeOB_0/3.jpg)](https://www.youtube.com/watch?v=Xl1w8YeOB_0)
 
 .        
         
