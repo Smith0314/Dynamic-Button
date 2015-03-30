@@ -2,8 +2,10 @@
 Dynamic Create Button and Arrange, built using Swift, without storyboard
         
         
-*演示影片:操作 Slider 來改變數量及行列
+*演示影片
 -------------------------------------------------------------------
+
+操作 Slider 來改變數量及行列，點擊 Block 可顯示該色碼
 
 [![Dynamic Button by Smith](https://i.ytimg.com/vi/Xl1w8YeOB_0/3.jpg)](https://www.youtube.com/watch?v=Xl1w8YeOB_0)
 
