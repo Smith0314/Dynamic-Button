@@ -2,7 +2,7 @@
 Dynamic Create Button and Arrange, built using Swift, without storyboard
         
         
-*演示影片
+*Demo Film
 -------------------------------------------------------------------
 
 操作 Slider 來改變數量及行列，點擊 Block 可顯示該色碼
@@ -11,14 +11,14 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
 
 .        
         
-*自動對應不同螢幕尺寸
+*Auto Layout
 -------------------------------------------------------------------
 
 ![image](https://github.com/Smith0314/Dynamic_Button/blob/master/screenshots/all.png)
 
 .        
         
-*用廻圈建立跟初始化按鈕
+*Initialization And Create Button with Loop
 -------------------------------------------------------------------
 
 首先宣告一個 function 來實例化按鈕
@@ -83,7 +83,7 @@ Dynamic Create Button and Arrange, built using Swift, without storyboard
   
 .        
         
-  *用 Slider 控制數量及行列
+  *Control The Columns And Row With Slider
 -------------------------------------------------------------------
 
 宣告兩個 Slider，sliderBtnNum 控制 button 數量，sliderColumnsNum 控制每行有幾列，再宣告兩個 function 來將 Slider 的值代入
